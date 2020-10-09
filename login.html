@@ -45,12 +45,40 @@
             </form>
         </div>
         <!-- 注册 -->
-        <a href="javascript:;" id="link_login">去登录</a>
-    </div>
+        <div class="reg-box">
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="password" required lay-verify="required" placeholder="请再次确认密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 登录按钮 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>注册</button>
+                </div>
+                <div class="layui-form-item links">
+                    <a href="javascript:;" id="link_login">去登录</a>
+                </div>
+            </form>
+        </div>
     </div>
     <!-- 导入JQuery -->
     <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入login.js -->
     <script src="/assets/js/login.js"></script>
+    <!-- 导入layui.js -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
 </body>
 
 </html>
